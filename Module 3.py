@@ -2,18 +2,21 @@
 
 
 
-
+#declare the variable and constants for this program
 TAX = 0.06
 numberofcoffee = 0
 numberofmuffin = 0
 print('***************************************')
 print('        My Coffee and Muffin Shop')
+#Get input from the user
 numberofcoffee  = int(input('Number of coffees bought :'))
 numberofmuffin = int(input('Number of muffins bought :'))
 print('***************************************')
+#calculate the price
 priceofcoffee = numberofcoffee * 5
 priceofmuffin = numberofmuffin * 4
 tax = (priceofcoffee + priceofmuffin) * TAX
+#display the receipt to the user
 print('***************************************')
 print('        My Coffee and Muffin Shop Receipt')
 print(numberofcoffee, f'Coffee at $5 each :${priceofcoffee:.2f}' )
